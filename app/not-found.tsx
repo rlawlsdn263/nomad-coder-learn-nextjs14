@@ -1,5 +1,10 @@
-import React from "react";
+import Navigation from "../components/Navigation";
 
 export default function NotFound() {
-  return <h1>Not Found!</h1>;
+  return (
+    <div>
+      <Navigation></Navigation>
+      <h1>Not Found!</h1>
+    </div>
+  );
 }
