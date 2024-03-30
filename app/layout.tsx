@@ -1,5 +1,9 @@
 import Navigation from "../components/Navigation";
 
+export const metadata = {
+  description: "The best movies on the best framework",
+};
+
 export default function RootLayout({
   children,
 }: {
