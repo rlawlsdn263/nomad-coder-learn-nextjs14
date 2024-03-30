@@ -1,4 +1,7 @@
-export default function MovieDetail(props) {
-  console.log(props);
-  return <div>MovieDetail</div>;
+export default function MovieDetail({
+  params: { id },
+}: {
+  params: { id: string };
+}) {
+  return <div>Movie {id}</div>;
 }
