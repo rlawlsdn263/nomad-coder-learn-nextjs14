@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Home | Next Movies",
+  title: "Home",
 };
 
 export default function Home() {
