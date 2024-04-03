@@ -21,9 +21,9 @@ export default async function MovieDetail({
 }: {
   params: { id: string };
 }) {
+  console.log("===============");
   console.log("Start Fetching!");
-  const movie = await getMovie(id);
-  const video = await getVideos(id);
+  const [movie, videos] = await Promise.all([getMovie(id), getVideos(id)]);
   console.log("End Fetching!");
 
   return <div>{movie.title}</div>;
